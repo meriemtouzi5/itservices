@@ -18,24 +18,24 @@ hr {
     margin-bottom: 1rem;
     display: block;
 }
+section{
+    padding: 1rem 6rem;
+}
 /* header */
 
-header {
+header,footer {
     display: flex;
     justify-content: space-between;
     padding: 1rem 6rem;
 }
-section{
-    padding: 1rem 6rem;
-}
-header ul {
+header ul,footer ul{
     display: flex;
     list-style: none;
 }
-header ul li{
+header ul li,footer ul li{
     padding-left: 20px;
 }
-header ul li a {
+header ul li a,footer ul li a  {
     text-decoration: none;
     color: #000;
     font-family: "Roboto", sans-serif;
