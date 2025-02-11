@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+}
+h3 {
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cecece;
+}
+.mt-1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+}
+section{
+    padding: 1rem 6rem;
+}
+header ul {
+    display: flex;
+    list-style: none;
+}
+header ul li{
+    padding-left: 20px;
+}
+header ul li a {
+    text-decoration: none;
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/* sections  home */
+section.intro img {
+    width: 100%;
+}
+.intro p {
+    color: #000000;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+}
+.list-item .item,.list-box-techno .box-techno,.list-box-offre .box-offre {
+    flex: 0 0 auto;
+    margin: 0 2% 0 0;
+}
+.list-item .item{
+    width: 23%;
+}
+.list-box-offre .box-offre {
+    width: 26%;
+}
+.list-item,.list-box-techno,.list-box-offre{
+    display: flex;
+    flex-wrap: wrap;
+}
+.services .item h2{
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    display: inline;
+}
+.services .item p {
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    line-height: 33px;
+    font-weight: 300;
+    display: inline;
+}
+.techno .box-techno {
+    background: #ffffff;
+    width: 164px;
+    height: 122px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.12);
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.techno .box-techno img {
+    width: 34px;
+    aspect-ratio: 1;
+}
+.offres .box-offre h2 {
+    color: #000000;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+.offres .box-offre p{
+    color: #000000;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 300;
+}
+.offres .box-offre ul li{
+    color: #000000;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+}
+.offres .box-offre ul{
+    list-style: none;
+    padding: 0;
+}
+.offres .box-offre{
+    background: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.13);
+    padding: 1rem 2rem;
+}
+
+.offres .box-offre ul li img {
+    width: 15px;
+}
+a.dark-btn {
+    background-color: #000;
+    color: #fff;
+    padding: .7rem 1.8rem;
+    border-radius: 31px;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    width: fit-content;
+}
