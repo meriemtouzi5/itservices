@@ -16,28 +16,29 @@
     <!-- header -->
     <header>
         <img src="./assets/img/logo.png" alt="" srcset="">
+        <div class="menu-mobile" onclick="toggleMenu(this)"></div>
         <ul>
             <li>
-                <a href="/">Accueil</a>
+                <a href="index.html">Accueil</a>
             </li>
             <li>
-                <a href="http://">Nos services</a>
+                <a href="#">Nos services</a>
             </li>
             <li>
-                <a href="http://">Technologies</a>
+                <a href="#">Technologies</a>
             </li>
             <li>
-                <a href="http://">Nos offres</a>
+                <a href="#">Nos offres</a>
             </li>
             <li>
-                <a href="http://" class="dark-btn">Contact</a>
+                <a href="contact.html" class="dark-btn">Contact</a>
             </li>
         </ul>
     </header>
-    <div class="intro-with-form">
+    <section class="intro-with-form">
         <div class="intro-contact">
-            <h1></h1>
-            <p></p>
+            <h1>Contact</h1>
+            <p>Si vous avez besoin de plus d’informations sur nos services ou si vous souhaitez discuter de votre projet, n’hésitez pas à nous contacter. Notre équipe est à votre disposition pour répondre à toutes vos questions et vous accompagner dans la réalisation de votre projet.</p>
         </div>
         <form action="">
             <div class="form-group">
@@ -56,22 +57,23 @@
                 <label for="">Votre Besoin</label>
                 <input type="text" name="" id="" placeholder="Choisissez une offre">
             </div>
-            <div class="form-group">
+            <div class="form-group w-full">
                 <label for="">Message Complémentaire</label>
-                <input type="text" name="" id="" placeholder="Décrivez votre projet, vos attentes...">
+                <textarea name="" id="" placeholder="Décrivez votre projet, vos attentes..."></textarea>
             </div>
-            <button type="button">Envoyer</button>
+            <button type="button" class="dark-btn">Envoyer</button>
         </form>
-    </div>
+    </section>
      <!-- Footer -->
      <footer>
         <img src="./assets/img/logo.png" alt="" srcset="">
         <ul>
-            <li><a href="http://">Nos services</a></li>
-            <li><a href="http://">Technologies</a></li>
-            <li><a href="http://">Nos offres</a></li>
-            <li><a href="http://">Contactez-nous</a></li>
+            <li><a href="#">Nos services</a></li>
+            <li><a href="#">Technologies</a></li>
+            <li><a href="#">Nos offres</a></li>
+            <li><a href="#">Contactez-nous</a></li>
         </ul>
      </footer> 
+     <script src="./assets/js/script.js"></script>
 </body>
 </html>

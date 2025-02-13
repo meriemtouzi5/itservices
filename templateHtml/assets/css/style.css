@@ -21,12 +21,18 @@ hr {
 section{
     padding: 1rem 6rem;
 }
-/* header */
+.w-full{
+    width: 100% !important;
+}
+/* header  footer */
 
 header,footer {
     display: flex;
     justify-content: space-between;
     padding: 1rem 6rem;
+}
+header {
+    align-items: center;
 }
 header ul,footer ul{
     display: flex;
@@ -41,8 +47,22 @@ header ul li a,footer ul li a  {
     font-family: "Roboto", sans-serif;
     font-size: 15px;
     font-weight: 300;
+    cursor: pointer;
 }
-
+header ul li a:hover,footer ul li a:hover  {
+    color: #721111;
+}
+footer{
+    border-top: 1px solid #cecece;
+    margin-top: 4rem;
+}
+header img,footer img {
+    width: fit-content;
+    height: 77px;
+}
+.menu-mobile{
+    display: none;
+}
 /* sections  home */
 section.intro img {
     width: 100%;
@@ -133,7 +153,7 @@ section.intro img {
 .offres .box-offre ul li img {
     width: 15px;
 }
-a.dark-btn {
+.dark-btn {
     background-color: #000;
     color: #fff;
     padding: .7rem 1.8rem;
@@ -143,4 +163,164 @@ a.dark-btn {
     font-size: 15px;
     font-weight: 300;
     width: fit-content;
+    border: none;
+    cursor: pointer;
+}
+.dark-btn:hover {
+    background-color: #721111;
+    color: #fff;
+}
+/* Contact */
+
+.intro-contact h1 {
+    color: #000000;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+}
+.intro-contact p {
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    width: 70%;
+}
+.intro-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+label {
+    color: #000000;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: .7rem;
+}
+input, select, textarea {
+    border-radius: 54px;
+    border: 1px solid #cecece;
+    height: 50px;
+    width: 90%;
+    padding: 0 1rem;
+}
+form {
+    display: flex;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+}
+.form-group {
+    width: 50%;
+    margin-bottom: 2rem;
+}
+::placeholder{
+    color: #b3b3b3;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+textarea {
+    width: 95%;
+    height: 200px;
+    border-radius: 15px;
+    padding-top: 1rem;
+}
+@media (max-width:991px){
+    header ul {
+        display: none;
+    }
+    section {
+        padding: 1rem 2rem;
+    }
+    header, footer {
+        padding: 1rem 2rem;
+    }
+    .list-item .item {
+        width: 50%;
+    }
+    .menu-mobile {
+        display: block;
+        width: 30px;
+        background-color: #000000;
+        height: 1px;
+        position: relative;
+        cursor: pointer;
+    }
+    .menu-mobile::before,.menu-mobile::after{
+        content: '';
+        position: absolute;
+        width: 30px;
+        background-color: #000000;
+        height: 1px;
+        left: 0;
+    }
+    .menu-mobile::before{
+        top: 7px;
+    }
+    .menu-mobile::after{
+        bottom: 7px;
+    }
+    .menu-mobile.open{
+        background-color: transparent;
+    }
+    .menu-mobile.open::before{
+        top: 0;
+        transform: rotate(55deg);
+    }
+    .menu-mobile.open::after{
+        bottom: 0;
+        transform: rotate(305deg);
+    }
+    ul.open {
+        display: block;
+        position: absolute;
+        background-color: #fff;
+        top: 80px;
+        width: 100%;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.12);
+        left: 0;
+        padding: 1rem 1rem 6rem;
+    }
+    ul.open .dark-btn {
+        margin-top: 1rem;
+        display: block;
+    }
+}
+@media(max-width:576px){
+    .list-item .item {
+        width: 100%;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    .techno .box-techno {
+        width: 48%;
+    }
+    .list-box-offre .box-offre {
+        width: 80%;
+    }
+    footer,footer ul {
+        display: block;
+    }
+    footer ul {
+        padding: 0;
+    }
+    footer ul li {
+        padding-left: 0px;
+    }
+    .intro-contact {
+        display: block;
+        margin-bottom: 2rem;
+    }
+    .intro-contact p {
+        width: 100%;
+    }
+    .form-group {
+        width: 100%;
+    }
 }
